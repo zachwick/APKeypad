@@ -1,0 +1,10 @@
+#This is a very alpha work in progress.
+
+##To Use:
+1. Create a directory called APKeypad in <arduino sketchfolder>/libraries/
+2. Restart Arduino IDE
+3. Use APKeypad library
+
+#Requirements:
+1. This uses the SubProcessing Drawing API from Liquidware. That means that you will have to use the Liquidware Antipasto Arduino IDE fork
+
