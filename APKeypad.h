@@ -35,15 +35,18 @@
 #include <Arduino.h>
 
 class APKeypad {
- public:
-  APKeypad();
-}
+	public:
+ 		APKeypad();
+  		void send_msg(char* msg);
+		void read_msg(char* msg);
+};
 
 class APNumpad : public APKeypad {
- public:
-  APNumpad();
-  void draw_buttons();
-}
+	public:
+ 		APNumpad();
+  		void draw_buttons();
+		char* det_touch();
+};
 
 #endif
 

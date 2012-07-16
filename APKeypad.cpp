@@ -6,7 +6,7 @@ APNumpad::APNumpad() {
   return;
 }
 
-void APNumpad::det_touch() {
+char* APNumpad::det_touch() {
   if (mouseX < 79) {
     if (mouseY < 70) { // Touch was above all buttons
       // ignore touches in this area
@@ -60,7 +60,7 @@ void APNumpad::det_touch() {
   } 
 }
 
-void draw_num_buttons() {
+void APKeypad::draw_buttons() {
    fill(0);
    stroke(0,255,0);
    strokeWeight(1);
